@@ -40,7 +40,7 @@ function NewsFeedGridContainer({ technology }) {
             itemType={item.item_type}
             createdDate={item.created_date}
             byLine={item.byline}
-            image={item.multimedia[0]}
+            image={item.multimedia ? item.multimedia[0] : ""}
             title={item.title}
             abstract={item.abstract}
             url={item.url}
